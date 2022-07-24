@@ -5,7 +5,7 @@ description = ""
 authors = ["David <dtmeyers@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.11"
+python = "3.9.2"
 numpy = "^1.23.1"
 pandas = "^1.4.3"
 scikit-learn = "^1.1.1"
