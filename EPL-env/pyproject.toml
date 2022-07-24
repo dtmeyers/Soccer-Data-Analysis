@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "EPL-data"
+version = "0.1.0"
+description = ""
+authors = ["David <dtmeyers@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+numpy = "^1.23.1"
+pandas = "^1.4.3"
+scikit-learn = "^1.1.1"
+scipy = "^1.8.1"
+joblib = "^1.1.0"
+threadpoolctl = "^3.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
