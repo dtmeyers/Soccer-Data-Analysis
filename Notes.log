@@ -1,0 +1,49 @@
+8/12/22
+The following is from the EPL 2021-2022 season. The hold (~5%) comes almost entirely from draws and home teams.
+
+Total games in the dataset:  378
+Average draw probability:  0.24134381662484805
+Percentage of games drawn:  0.23015873015873015
+Average implied probability of a draw:  0.252710286373565
+
+Average home win probability:  0.44611870651027136
+Percentage of games won by home team:  0.42857142857142855
+Average implied probability:  0.4588365318386563
+
+Average away win probability:  0.3109815874505258
+Percentage of games won by away team:  0.3412698412698413
+Average implied probability:  0.34254833449493327
+
+Unsurprisingly, amost the entire profit generated was from betting on away teams (at a 15% minimum edge)
+Total Profit:  8.100000000000001  on  34  total bets
+Profit   -1.65
+dtype: float64  on  23  H bets
+Profit    9.75
+dtype: float64  on  11  A bets
+Profit    0.0
+dtype: float64  on  0  D bets
+
+This is in stark contrast to where the hold is in La Liga during the same season: almost entirely on the away team
+The draw numbers are interesting: historically around 27.5% in La Liga, but the book had a small enough hold on that to lose on variance
+
+Total games in the dataset:  379
+Average draw probability:  0.26445774823084384
+Percentage of games drawn:  0.2928759894459103
+Average implied probability of a draw:  0.28011120406742945
+
+Average home win probability:  0.47462027555028086
+Percentage of games won by home team:  0.43535620052770446
+Average implied probability:  0.4636003165768449
+
+Average away win probability:  0.25941367452133846
+Percentage of games won by away team:  0.2717678100263852
+Average implied probability:  0.31053340105402444
+
+The model also underpredicted draws, so it missed out on this opportunity:
+Total Profit:  -0.5500000000000012  on  24  total bets
+Profit    1.45
+dtype: float64  on  22  H bets
+Profit   -2.0
+dtype: float64  on  2  A bets
+Profit    0.0
+dtype: float64  on  0  D bets
