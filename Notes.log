@@ -75,3 +75,14 @@ dtype: float64  on  1  D bets
 The interesting thing shown by these 3 leagues is how steady the implied probability on home teams is.
 The shift occurs between the odds of a draw and the odds of the away team winning.
 The book also doesn't seem to take a large hold on draws, although the model doesn't pick up this as a big edge.
+
+Part of this explanation very likely lies in the goalscoring environments presented by each league.
+In the following chart, the first number in each column is goals across the entire database, and the second is goals in the test data.
+League    Home Goals        Away Goals
+Germany   1.645   1.718     1.349   1.43
+Spain     1.511   1.48      1.159   1.183
+England   1.565   1.621     1.283   1.33
+
+The model seems to performs better in higher goal scoring environments.
+In fact, La Liga is the only league of the 3 where the model underpredicted draws.
+Fortunately, the general trend is towards higher goal scoring: each league had higher scoring rates in the test set than the sample set.
