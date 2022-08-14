@@ -1,4 +1,4 @@
-8/12/22
+8/13/22
 The following is from the EPL 2021-2022 season. The hold (~5%) comes almost entirely from draws and home teams.
 
 Total games in the dataset:  378
@@ -86,3 +86,17 @@ England   1.565   1.621     1.283   1.33
 The model seems to performs better in higher goal scoring environments.
 In fact, La Liga is the only league of the 3 where the model underpredicted draws.
 Fortunately, the general trend is towards higher goal scoring: each league had higher scoring rates in the test set than the sample set.
+
+The Eredivisie is a high scoring league, but the available data is not great. The model missed the massive edge on away teams
+Total games in the dataset:  300
+Average draw probability:  0.25194041140364043
+Percentage of games drawn:  0.21333333333333335
+Average implied probability of a draw:  0.24457708738789383
+
+Average home win probability:  0.43548782257742585
+Percentage of games won by home team:  0.4266666666666667
+Average implied probability:  0.471072391554087
+
+Average away win probability:  0.3107827795731386
+Percentage of games won by away team:  0.36
+Average implied probability:  0.3467063341896335
