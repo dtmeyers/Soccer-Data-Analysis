@@ -47,3 +47,31 @@ Profit   -2.0
 dtype: float64  on  2  A bets
 Profit    0.0
 dtype: float64  on  0  D bets
+
+The model did manage to find this spot in the Bundesliga: there was almost no hold on home teams
+
+Total games in the dataset:  302
+Average draw probability:  0.24437977414906048
+Percentage of games drawn:  0.23841059602649006
+Average implied probability of a draw:  0.2455225472828563
+
+Average home win probability:  0.46165038914070866
+Percentage of games won by home team:  0.46357615894039733
+Average implied probability:  0.46483759991595885
+
+Average away win probability:  0.2922623838043611
+Percentage of games won by away team:  0.2980132450331126
+Average implied probability:  0.3433855096853581
+
+Almost every bet is on home teams, and all of the profit comes from those bets:
+Total Profit:  5.0200000000000005  on  21  total bets
+Profit    6.02
+dtype: float64  on  20  H bets
+Profit    0.0
+dtype: float64  on  0  A bets
+Profit   -1.0
+dtype: float64  on  1  D bets
+
+The interesting thing shown by these 3 leagues is how steady the implied probability on home teams is.
+The shift occurs between the odds of a draw and the odds of the away team winning.
+The book also doesn't seem to take a large hold on draws, although the model doesn't pick up this as a big edge.
