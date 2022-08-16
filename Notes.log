@@ -1,25 +1,27 @@
 8/13/22
 The following is from the EPL 2021-2022 season. The hold (~5%) comes almost entirely from draws and home teams.
+This is in contrast to the model, which underpredicted home goals by .05 and overpredicted away goals by .11, leading to overpredicting away teams
 
 Total games in the dataset:  378
-Average draw probability:  0.24134381662484805
+Average draw probability:  0.24539611053731486
 Percentage of games drawn:  0.23015873015873015
 Average implied probability of a draw:  0.252710286373565
 
-Average home win probability:  0.44611870651027136
+Average home win probability:  0.3952027493825154
 Percentage of games won by home team:  0.42857142857142855
 Average implied probability:  0.4588365318386563
 
-Average away win probability:  0.3109815874505258
+Average away win probability:  0.3577233840314776
 Percentage of games won by away team:  0.3412698412698413
 Average implied probability:  0.34254833449493327
 
-Unsurprisingly, amost the entire profit generated was from betting on away teams (at a 15% minimum edge)
-Total Profit:  8.100000000000001  on  34  total bets
-Profit   -1.65
-dtype: float64  on  23  H bets
-Profit    9.75
-dtype: float64  on  11  A bets
+Unsurprisingly, most of the bets were on away teams
+In this particular case, the lost value comes largely from bets on heavy away favorites.
+Total Profit:  -6.2  on  31  total bets
+Profit   -4.0
+dtype: float64  on  7  H bets
+Profit   -2.2
+dtype: float64  on  24  A bets
 Profit    0.0
 dtype: float64  on  0  D bets
 
@@ -27,54 +29,54 @@ This is in stark contrast to where the hold is in La Liga during the same season
 The draw numbers are interesting: historically around 27.5% in La Liga, but the book had a small enough hold on that to lose on variance
 
 Total games in the dataset:  379
-Average draw probability:  0.26445774823084384
+Average draw probability:  0.27780960288333195
 Percentage of games drawn:  0.2928759894459103
 Average implied probability of a draw:  0.28011120406742945
 
-Average home win probability:  0.47462027555028086
+Average home win probability:  0.4354025689268106
 Percentage of games won by home team:  0.43535620052770446
 Average implied probability:  0.4636003165768449
 
-Average away win probability:  0.25941367452133846
+Average away win probability:  0.28539407313832765
 Percentage of games won by away team:  0.2717678100263852
 Average implied probability:  0.31053340105402444
 
 The model also underpredicted draws, so it missed out on this opportunity:
-Total Profit:  -0.5500000000000012  on  24  total bets
-Profit    1.45
-dtype: float64  on  22  H bets
-Profit   -2.0
-dtype: float64  on  2  A bets
+Total Profit:  5.799999999999999  on  13  total bets
+Profit    7.55
+dtype: float64  on  8  H bets
+Profit   -1.75
+dtype: float64  on  5  A bets
 Profit    0.0
 dtype: float64  on  0  D bets
 
-The model did manage to find this spot in the Bundesliga: there was almost no hold on home teams
+The model did manage to find a similar spot in the Bundesliga: there was almost no hold on home teams
 
 Total games in the dataset:  302
-Average draw probability:  0.24437977414906048
+Average draw probability:  0.24545373998881406
 Percentage of games drawn:  0.23841059602649006
 Average implied probability of a draw:  0.2455225472828563
 
-Average home win probability:  0.46165038914070866
+Average home win probability:  0.45886546324616106
 Percentage of games won by home team:  0.46357615894039733
 Average implied probability:  0.46483759991595885
 
-Average away win probability:  0.2922623838043611
+Average away win probability:  0.29385156079883545
 Percentage of games won by away team:  0.2980132450331126
 Average implied probability:  0.3433855096853581
 
-Almost every bet is on home teams, and all of the profit comes from those bets:
-Total Profit:  5.0200000000000005  on  21  total bets
-Profit    6.02
-dtype: float64  on  20  H bets
-Profit    0.0
-dtype: float64  on  0  A bets
+Almost every bet is on home teams, and most of the profit comes from those bets:
+Total Profit:  10.860000000000001  on  24  total bets
+Profit    8.86
+dtype: float64  on  22  H bets
+Profit    3.0
+dtype: float64  on  1  A bets
 Profit   -1.0
 dtype: float64  on  1  D bets
 
 The interesting thing shown by these 3 leagues is how steady the implied probability on home teams is.
 The shift occurs between the odds of a draw and the odds of the away team winning.
-The book also doesn't seem to take a large hold on draws, although the model doesn't pick up this as a big edge.
+The book also doesn't seem to take a large hold on draws, although the model doesn't pick this up as a big edge.
 
 Part of this explanation very likely lies in the goalscoring environments presented by each league.
 In the following chart, the first number in each column is goals across the entire database, and the second is goals in the test data.
@@ -87,16 +89,25 @@ The model seems to performs better in higher goal scoring environments.
 In fact, La Liga is the only league of the 3 where the model underpredicted draws.
 Fortunately, the general trend is towards higher goal scoring: each league had higher scoring rates in the test set than the sample set.
 
-The Eredivisie is a high scoring league, but the available data is not great. The model missed the massive edge on away teams
+The Eredivisie is a high scoring league, but the available data is not great. The model did, however, find the massive edge on away teams
 Total games in the dataset:  300
-Average draw probability:  0.25194041140364043
+Average draw probability:  0.2478196188526683
 Percentage of games drawn:  0.21333333333333335
 Average implied probability of a draw:  0.24457708738789383
 
-Average home win probability:  0.43548782257742585
+Average home win probability:  0.3777155800549428
 Percentage of games won by home team:  0.4266666666666667
 Average implied probability:  0.471072391554087
 
-Average away win probability:  0.3107827795731386
+Average away win probability:  0.37242049659344056
 Percentage of games won by away team:  0.36
 Average implied probability:  0.3467063341896335
+
+This turned into a fantastic return from a group of bets almost entirely on away sides
+Total Profit:  14.55  on  24  total bets
+Profit   -1.0
+dtype: float64  on  1  H bets
+Profit    15.55
+dtype: float64  on  23  A bets
+Profit    0.0
+dtype: float64  on  0  D bets
