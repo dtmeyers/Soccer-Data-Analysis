@@ -111,3 +111,9 @@ Profit    15.55
 dtype: float64  on  23  A bets
 Profit    0.0
 dtype: float64  on  0  D bets
+
+8/16/2022
+On the subject of draws, I found this polynomial regression f(x) = 0.13760150266670684 + 0.644186764714782·x¹ - 0.7706992882651327·x²
+where x is the probability of the home team winning. This was found break spi_matches into 10 bins
+f(x) = 0.11969617476924527 + 0.8177767293070276·x¹ - 1.008198398863367·x² was found using 100 bins
+Both of these were found using every match available in the dataset, not from league specific data.
